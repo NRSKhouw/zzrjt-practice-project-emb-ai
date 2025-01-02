@@ -7,9 +7,9 @@ class TestSentimentAnalyser(unittest.TestCase):
         self.assertEqual(result_1['label'], 'SENT_POSITIVE')
 
         result_2 = sentiment_analyser('I hate working with Python')
-        self.assertEqual(result_1['label'], 'SENT_NEGATIVE')
+        self.assertEqual(result_2['label'], 'SENT_NEGATIVE')
 
-        result_1 = sentiment_analyser('I am neutral on Python')
-        self.assertEqual(result_1['label'], 'SENT_POSITIVE')
+        result_3 = sentiment_analyser('I am neutral on Python')
+        self.assertEqual(result_3['label'], 'SENT_NEUTRAL')
 
 unittest.main()
